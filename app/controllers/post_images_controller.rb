@@ -9,10 +9,11 @@ class PostImagesController < ApplicationController
     redirect_to post_images_path
    end
   def index
-      @post_images = all
+       @post_images = PostImage.all
   end
   def show
       @post_image = PostImage.find(params[:id])
+      @post_comment = PostComment.new
   end
   def destroy
     post_image = PostImage.find(params[:id])
