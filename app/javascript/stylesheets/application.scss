@@ -1,0 +1,12 @@
+
+
+import "channels"
+
+import "jquery";
+import "popper.js";
+import "bootstrap";
+import "../stylesheets/application";
+
+Ralls.start()
+Turbolinks.start()
+ActiveStorage.start()
